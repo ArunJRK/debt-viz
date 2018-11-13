@@ -315,6 +315,7 @@ a:hover {
     background: #008CBA;
     position: fixed;
     bottom: 0;
+    opacity: 0;
     height: 100px;
 }
 table,#update{
