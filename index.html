@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/plotly-latest.min.js"></script>
+    <script src="script/svg.min.js"></script>
+    <script src="script/Chart.js"></script>
+    <script src="script/rainbowvis.js"></script>
+    <script src="script/jquery.powertip.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.powertip.min.css">
+    <script src="script/main.js"></script>
+
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
+        
+     
+    </style>
+</head>
+
+<body style="background-color:rgb(255, 255, 255);">
+
+
+    <!--<div class="text">
+        <h1>Want to know how much your country owe's on your behalf?</h1>
+        <br>
+        <center>
+            <select id="list"></select>
+            <br>
+            <input id="income" type="number" placeholder="Your income in $">
+
+         <button id="submit" onclick="gift(document.getElementById('income').value)">Go</button>
+        </center>
+        <br>
+        <br>
+
+    </div>-->
+    <div class="summary">
+        <h5>World & Debt</h5>
+        <h3>
+            <br>
+            <br>Introduction</h3>
+        <!-- <div style="width:100px; height: 3px; background-color: dodgerblue; text-align: center; margin-bottom: 10px;"></div>
+           -->
+        In the world of global village, where every country aspires to become. Today RnD happens in one country, manuafacturing and assembled in enoher countries
+        and in hundred of other countries. World is intertwined with the help of supply chain. We hear all these buzz words Innovation, Ai, Ml and every now and 
+        then new technology comes up and makes previous years gadgets useless. So we go crazy after technology and gadgets.
+        Less we know how the math operating behind. Not all time
+        government has money to finance it's economic activity(Infrastructure, Services, Defence, Oil, Financial institutions, susidies..). Like corporates and
+         people like us Governments also borrows money.
+        <br><br><br>
+        <h3>Pocket money of government?</h3>
+        Government raises money through taxes, non-tax revenue from divideds and PSU's. Every year respective governments expect GDP and some tax revenues and
+         budget is planned according to that. 
+        When there is need of more money for existing government projects or tax income is less than expected spending, the budget has a <a href="https://www.investopedia.com/terms/d/deficit.asp">deficit</a>. If you a water tub and consider 
+        the water inside it to be <a href="https://www.investopedia.com/terms/s/sovereign-debt.asp" target="_blank">debt</a>, the water you will add into the tub is deficit. creditors for financing its expenditure.
+        In the need for hour government can increase tax, sell bonds(an agreement that government will pay you back the money in future with interest) to local creditors who can be any citizen or local banks otherwise by borrowing from a country 
+        or MFI(Multilateral financial institutions). Hypothetically by printing more money, government can spend more. But that is a romantic and impractical idea for long term.
+        <i>Just for fact that there is actually no law or formula which dictates how much money should print.</i>
+        <br> 
+         <br>
+         <br> 
+            <h3>How does it affect you?</h3>
+             Ultimately it boils down to us me and you as citizens who should repay this dept by either by paying more tax or cutting down on future spending. 
+             That is okay if we want to chill if whole world is chilling too, but we are on a race to become developed countries. 
+             Is any country trying to repay its debt completly. Hmm actually doesn't seem like it even the middle east counties have debt. 
+             And debt is <a href="https://www.nationaldebtclocks.org/">increasing 
+            minute by minute</a>. India added 3.5% deficit this year alone. I'm still a lay man who doesn't understand the business of debt, 
+            it is very unclear where all this is leading to( maybe a world war three of debts, where creditors attack debitors). 
+            Let me stop this speculation and lets dive into numbers. As of now there is no clear data about debt of all countries as of 2018 so i have taken data from 2017 and 2016.
+            
+              <br><br><br>
+            </div>
+    <center> <iframe width="1200" height="900" frameborder="0" scrolling="no" src="//plot.ly/~arunjrk/5.embed"></iframe></center><br>
+    <div class="summary"><br><br>Clearly Unites States has the highest debt in the world, followed by Japan, China so on. It is also the richest country in terms of GDP. 
+        And all African countries have almost no debt compared to Unites states.</div>
+    <center><br><br><br>
+        <iframe width="1200" height="900" frameborder="0" scrolling="no" src="//plot.ly/~arunjrk/3.embed"></iframe>
+    </center>
+    <div class="summary"><br><br>
+        This map shows debt against their productivity ie GDP in 
+        percentages. As we see it a higher debt of US economy 
+        doesn't directly translate to big debt compared to their GDP.
+        If the economy is deep enough they can take deeper debt.
+    </div>
+    <center><br><br><br>
+<center>
+    <iframe width="1200" height="870" frameborder="0" scrolling="no" src="//plot.ly/~arunjrk/7.embed"></iframe>
+</center>
+<div class="summary"><br>Just the top 10 countries share 80% of world debt.<br>
+<br>
+<h3>Conclusion</h3>
+In the name of developement and running a developed economy we are in debting a lot in terms of credit and resouces. Former can be given back but later becomes scrap. A small of the world is consuming maximum amount of wealth.
+Debts are agreement of paying back with collateral. When countries default they go in crisis. Greece and Venezula are undergoing economic crisis. When small countries default it doesnt affect the world but when a behemoth like 
+US defaults you what happens, GFC (Global finacial crisis). US is still trying to solve its crisis, the solution also begins with lending more to the civilians. Debt seems like a scary term to normal man, he may not realise that 
+whole world is under this debt crisis. Recessions and crisis are uninvited geusts to the economy. 
+
+<i>Below is the countries arranged by order of debt and data is debt per capita.</i>
+
+</div>
+
+<center><br><br><br>
+    <div id="new">
+        <div id="graph2">
+        
+
+        </div>
+
+    </div>
+    <div class="foot">
+        <table>
+            <tr>
+                <th></th>
+                <th>Debt in Million</th>
+                <th>Debt Per-capita</th>
+                <th>Debt as % of GDP</th>
+            </tr>
+            <tr id="droplist"></tr>
+            <tr id="update"></tr>
+        </table>
+        <div id="select"></div>
+        <div id="hover"></div>
+    </div>
+  
+
+    <script>
+        var c = 0,
+            n = 73,
+            r = 0,
+            i;
+
+        var rainbow = new Rainbow();
+        rainbow.setNumberRange(0, 300);
+        // rainbow.setSpectrum('000008','471d73','8b307f','ae407a','d15a54','f07738','fea100','f8d342');    
+        rainbow.setSpectrum('yellow', 'red');
+
+        var obj, x = " ",
+            objuser, objname;
+        objname = [{"countries":"Afghanistan "},{"countries":"Albania "},{"countries":"Algeria "},{"countries":"Angola "},{"countries":"Antigua and Barbuda "},{"countries":"Argentina "},{"countries":"Armenia "},{"countries":"Australia "},{"countries":"Austria "},{"countries":"Azerbaijan "},{"countries":"Bahamas "},{"countries":"Bahrain "},{"countries":"Bangladesh "},{"countries":"Barbados "},{"countries":"Belarus "},{"countries":"Belgium "},{"countries":"Belize "},{"countries":"Benin "},{"countries":"Bhutan "},{"countries":"Bolivia "},{"countries":"Bosnia and Herzegovina "},{"countries":"Botswana "},{"countries":"Brazil "},{"countries":"Brunei "},{"countries":"Bulgaria "},{"countries":"Burkina Faso "},{"countries":"Burma - Myanmar "},{"countries":"Burundi "},{"countries":"Cambodia "},{"countries":"Cameroon "},{"countries":"Canada "},{"countries":"Cape Verde "},{"countries":"Central African Republic "},{"countries":"Chad "},{"countries":"Chile "},{"countries":"China "},{"countries":"Colombia "},{"countries":"Comoros "},{"countries":"Costa Rica "},{"countries":"Croatia "},{"countries":"Cyprus "},{"countries":"Czech Republic "},{"countries":"Democratic Republic of the Congo "},{"countries":"Denmark "},{"countries":"Djibouti "},{"countries":"Dominica "},{"countries":"Dominican Republic "},{"countries":"Ecuador "},{"countries":"Egypt "},{"countries":"El Salvador "},{"countries":"Equatorial Guinea "},{"countries":"Eritrea "},{"countries":"Estonia "},{"countries":"Ethiopia "},{"countries":"Federated States of Micronesia "},{"countries":"Fiji "},{"countries":"Finland "},{"countries":"France "},{"countries":"Gabon "},{"countries":"Georgia "},{"countries":"Germany "},{"countries":"Ghana "},{"countries":"Greece "},{"countries":"Grenada "},{"countries":"Guatemala "},{"countries":"Guinea "},{"countries":"Guinea-Bissau "},{"countries":"Guyana "},{"countries":"Haiti "},{"countries":"Honduras "},{"countries":"Hong Kong "},{"countries":"Hungary "},{"countries":"Iceland "},{"countries":"India "},{"countries":"Indonesia "},{"countries":"Iran "},{"countries":"Iraq "},{"countries":"Ireland "},{"countries":"Israel "},{"countries":"Italy "},{"countries":"Ivory Coast "},{"countries":"Jamaica "},{"countries":"Japan "},{"countries":"Jordan "},{"countries":"Kazakhstan "},{"countries":"Kenya "},{"countries":"Kiribati "},{"countries":"Kuwait "},{"countries":"Kyrgyzstan "},{"countries":"Laos "},{"countries":"Latvia "},{"countries":"Lebanon "},{"countries":"Lesotho "},{"countries":"Liberia "},{"countries":"Libya "},{"countries":"Lithuania "},{"countries":"Luxembourg "},{"countries":"Madagascar "},{"countries":"Malawi "},{"countries":"Malaysia "},{"countries":"Maldives "},{"countries":"Mali "},{"countries":"Malta "},{"countries":"Marshall Islands "},{"countries":"Mauritania "},{"countries":"Mauritius "},{"countries":"Mexico "},{"countries":"Moldova "},{"countries":"Montenegro "},{"countries":"Morocco "},{"countries":"Mozambique "},{"countries":"Namibia "},{"countries":"Nauru "},{"countries":"Nepal "},{"countries":"Netherlands "},{"countries":"New Zealand "},{"countries":"Nicaragua "},{"countries":"Niger "},{"countries":"Nigeria "},{"countries":"Norway "},{"countries":"Oman "},{"countries":"Pakistan "},{"countries":"Panama "},{"countries":"Papua New Guinea "},{"countries":"Paraguay "},{"countries":"Peru "},{"countries":"Philippines "},{"countries":"Poland "},{"countries":"Portugal "},{"countries":"Qatar "},{"countries":"Republic of Macedonia "},{"countries":"Republic of the Congo "},{"countries":"Romania "},{"countries":"Russia "},{"countries":"Rwanda "},{"countries":"Saint Kitts and Nevis "},{"countries":"Saint Lucia "},{"countries":"Saint Vincent and the Grenadines "},{"countries":"Samoa "},{"countries":"San Marino "},{"countries":"Sao Tome and Principe "},{"countries":"Saudi Arabia "},{"countries":"Senegal "},{"countries":"Serbia "},{"countries":"Seychelles "},{"countries":"Sierra Leone "},{"countries":"Singapore "},{"countries":"Slovakia "},{"countries":"Slovenia "},{"countries":"Solomon Islands "},{"countries":"South Africa "},{"countries":"South Korea "},{"countries":"South Sudan "},{"countries":"Spain "},{"countries":"Sri Lanka "},{"countries":"Sudan "},{"countries":"Suriname "},{"countries":"Swaziland "},{"countries":"Sweden "},{"countries":"Switzerland "},{"countries":"Syria "},{"countries":"Taiwan "},{"countries":"Tajikistan "},{"countries":"Tanzania "},{"countries":"Thailand "},{"countries":"The Gambia "},{"countries":"Togo "},{"countries":"Trinidad and Tobago "},{"countries":"Tunisia "},{"countries":"Turkey "},{"countries":"Turkmenistan "},{"countries":"Tuvalu "},{"countries":"Uganda "},{"countries":"Ukraine "},{"countries":"United Arab Emirates "},{"countries":"United Kingdom "},{"countries":"United States "},{"countries":"Uruguay "},{"countries":"Uzbekistan "},{"countries":"Vanuatu "},{"countries":"Venezuela "},{"countries":"Vietnam "},{"countries":"Yemen "},{"countries":"Zambia "},{"countries":"Zimbabwe "}];
+        obj =[{"countries":"United States ","debt":19959114,"dpg":107.17,"dpc":61769,"order":177,"gdp":18623788,"debttxt":"$19,959,114"},{"countries":"Japan ","debt":11664882,"dpg":235.63,"dpc":91878,"order":83,"gdp":4950508,"debttxt":"$11,664,882"},{"countries":"China ","debt":4975155,"dpg":44.32,"dpc":3598,"order":36,"gdp":11225530,"debttxt":"$4,975,155"},{"countries":"Italy ","debt":2556574,"dpg":131.8,"dpc":42269,"order":80,"gdp":1939737,"debttxt":"$2,556,574"},{"countries":"France ","debt":2506167,"dpg":97,"dpc":37282,"order":58,"gdp":2583677,"debttxt":"$2,506,167"},{"countries":"Germany ","debt":2364059,"dpg":64.1,"dpc":28534,"order":61,"gdp":3688080,"debttxt":"$2,364,059"},{"countries":"United Kingdom ","debt":2274443,"dpg":87.7,"dpc":34337,"order":176,"gdp":2593436,"debttxt":"$2,274,443"},{"countries":"India ","debt":1566680,"dpg":68.89,"dpc":1183,"order":74,"gdp":2274176,"debttxt":"$1,566,680"},{"countries":"Brazil ","debt":1406874,"dpg":78.44,"dpc":6826,"order":23,"gdp":1793567,"debttxt":"$1,406,874"},{"countries":"Canada ","debt":1400169,"dpg":91.15,"dpc":38673,"order":31,"gdp":1536115,"debttxt":"$1,400,169"},{"countries":"Spain ","debt":1292714,"dpg":98.3,"dpc":27705,"order":154,"gdp":1315070,"debttxt":"$1,292,714"},{"countries":"Mexico ","debt":611926,"dpg":56.81,"dpc":4798,"order":107,"gdp":1077145,"debttxt":"$611,926"},{"countries":"South Korea ","debt":564507,"dpg":40,"dpc":11016,"order":152,"gdp":1411268,"debttxt":"$564,507"},{"countries":"Australia ","debt":513635,"dpg":40.6,"dpc":21063,"order":8,"gdp":1265111,"debttxt":"$513,635"},{"countries":"Belgium ","debt":510817,"dpg":103.1,"dpc":44757,"order":16,"gdp":495458,"debttxt":"$510,817"},{"countries":"Netherlands ","debt":470031,"dpg":56.7,"dpc":27458,"order":115,"gdp":828979,"debttxt":"$470,031"},{"countries":"Greece ","debt":358575,"dpg":178.6,"dpc":33390,"order":63,"gdp":200770,"debttxt":"$358,575"},{"countries":"Singapore ","debt":335341,"dpg":106.77,"dpc":59808,"order":147,"gdp":314078,"debttxt":"$335,341"},{"countries":"Austria ","debt":327037,"dpg":78.4,"dpc":37069,"order":9,"gdp":417139,"debttxt":"$327,037"},{"countries":"Egypt ","debt":322065,"dpg":96.84,"dpc":3571,"order":49,"gdp":332574,"debttxt":"$322,065"},{"countries":"Argentina ","debt":295503,"dpg":53.32,"dpc":6778,"order":6,"gdp":554207,"debttxt":"$295,503"},{"countries":"Switzerland ","debt":289918,"dpg":43.34,"dpc":34434,"order":160,"gdp":668939,"debttxt":"$289,918"},{"countries":"Portugal ","debt":274088,"dpg":125.7,"dpc":26634,"order":129,"gdp":218049,"debttxt":"$274,088"},{"countries":"Poland ","debt":271377,"dpg":50.6,"dpc":7146,"order":128,"gdp":536318,"debttxt":"$271,377"},{"countries":"Indonesia ","debt":264278,"dpg":28.34,"dpc":1022,"order":75,"gdp":932526,"debttxt":"$264,278"},{"countries":"Turkey ","debt":244499,"dpg":28.31,"dpc":3063,"order":170,"gdp":863649,"debttxt":"$244,499"},{"countries":"Ireland ","debt":227401,"dpg":68,"dpc":47001,"order":78,"gdp":334413,"debttxt":"$227,401"},{"countries":"Sweden ","debt":214599,"dpg":40.6,"dpc":21205,"order":159,"gdp":528569,"debttxt":"$214,599"},{"countries":"Russia ","debt":200820,"dpg":15.67,"dpc":1395,"order":134,"gdp":1281557,"debttxt":"$200,820"},{"countries":"Israel ","debt":198031,"dpg":62.31,"dpc":23181,"order":79,"gdp":317816,"debttxt":"$198,031"},{"countries":"Iran ","debt":197782,"dpg":48.89,"dpc":2458,"order":76,"gdp":404545,"debttxt":"$197,782"},{"countries":"Taiwan ","debt":192298,"dpg":36.23,"dpc":8169,"order":162,"gdp":530770,"debttxt":"$192,298"},{"countries":"Pakistan ","debt":188512,"dpg":67.57,"dpc":974,"order":122,"gdp":278988,"debttxt":"$188,512"},{"countries":"Thailand ","debt":169743,"dpg":41.81,"dpc":2465,"order":165,"gdp":405987,"debttxt":"$169,743"},{"countries":"Venezuela ","debt":169391,"dpg":72.27,"dpc":5587,"order":181,"gdp":234386,"debttxt":"$169,391"},{"countries":"Malaysia ","debt":166760,"dpg":56.22,"dpc":5272,"order":100,"gdp":296620,"debttxt":"$166,760"},{"countries":"Finland ","debt":155092,"dpg":61.4,"dpc":28131,"order":57,"gdp":252593,"debttxt":"$155,092"},{"countries":"South Africa ","debt":152508,"dpg":51.57,"dpc":2742,"order":151,"gdp":295730,"debttxt":"$152,508"},{"countries":"Colombia ","debt":141866,"dpg":50.66,"dpc":2910,"order":37,"gdp":280036,"debttxt":"$141,866"},{"countries":"Norway ","debt":136055,"dpg":36.66,"dpc":25874,"order":120,"gdp":371127,"debttxt":"$136,055"},{"countries":"Philippines ","debt":118851,"dpg":38.97,"dpc":1151,"order":127,"gdp":304981,"debttxt":"$118,851"},{"countries":"Denmark ","debt":118500,"dpg":36.4,"dpc":20498,"order":44,"gdp":325549,"debttxt":"$118,500"},{"countries":"Iraq ","debt":110564,"dpg":64.37,"dpc":2972,"order":77,"gdp":171763,"debttxt":"$110,564"},{"countries":"Vietnam ","debt":109055,"dpg":56.97,"dpc":1189,"order":182,"gdp":191425,"debttxt":"$109,055"},{"countries":"Hungary ","debt":102277,"dpg":73.6,"dpc":10460,"order":72,"gdp":138963,"debttxt":"$102,277"},{"countries":"Saudi Arabia ","debt":84461,"dpg":13.09,"dpc":2661,"order":142,"gdp":645233,"debttxt":"$84,461"},{"countries":"Nigeria ","debt":79542,"dpg":19.61,"dpc":428,"order":119,"gdp":405620,"debttxt":"$79,542"},{"countries":"Czech Republic ","debt":77384,"dpg":34.6,"dpc":7293,"order":42,"gdp":223653,"debttxt":"$77,384"},{"countries":"Angola ","debt":76118,"dpg":79.82,"dpc":2642,"order":4,"gdp":95362,"debttxt":"$76,118"},{"countries":"Ukraine ","debt":75794,"dpg":81.25,"dpc":1787,"order":174,"gdp":93285,"debttxt":"$75,794"},{"countries":"Romania ","debt":72939,"dpg":35,"dpc":3736,"order":133,"gdp":208397,"debttxt":"$72,939"},{"countries":"United Arab Emirates ","debt":72202,"dpg":20.7,"dpc":7789,"order":175,"gdp":348802,"debttxt":"$72,202"},{"countries":"Bangladesh ","debt":70696,"dpg":32.1,"dpc":434,"order":13,"gdp":220237,"debttxt":"$70,696"},{"countries":"Lebanon ","debt":70312,"dpg":142.18,"dpc":12016,"order":92,"gdp":49453,"debttxt":"$70,312"},{"countries":"Morocco ","debt":67046,"dpg":64.7,"dpc":1944,"order":110,"gdp":103626,"debttxt":"$67,046"},{"countries":"Sri Lanka ","debt":64483,"dpg":79.61,"dpc":3041,"order":155,"gdp":80999,"debttxt":"$64,483"},{"countries":"Qatar ","debt":57487,"dpg":34.92,"dpc":23579,"order":130,"gdp":164625,"debttxt":"$57,487"},{"countries":"Sudan ","debt":52680,"dpg":91.36,"dpc":1331,"order":156,"gdp":57662,"debttxt":"$52,680"},{"countries":"Chile ","debt":52619,"dpg":21.04,"dpc":2892,"order":35,"gdp":250090,"debttxt":"$52,619"},{"countries":"New Zealand ","debt":52221,"dpg":28.16,"dpc":11001,"order":116,"gdp":185444,"debttxt":"$52,221"},{"countries":"Slovakia ","debt":48833,"dpg":50.9,"dpc":8972,"order":148,"gdp":95939,"debttxt":"$48,833"},{"countries":"Peru ","debt":47667,"dpg":24.38,"dpc":1514,"order":126,"gdp":195517,"debttxt":"$47,667"},{"countries":"Croatia ","debt":43019,"dpg":78,"dpc":10478,"order":40,"gdp":55153,"debttxt":"$43,019"},{"countries":"Ecuador ","debt":42273,"dpg":42.87,"dpc":2558,"order":48,"gdp":98607,"debttxt":"$42,273"},{"countries":"Ethiopia ","debt":40219,"dpg":54.97,"dpc":441,"order":54,"gdp":73165,"debttxt":"$40,219"},{"countries":"Kenya ","debt":37717,"dpg":53.47,"dpc":778,"order":86,"gdp":70539,"debttxt":"$37,717"},{"countries":"Jordan ","debt":36812,"dpg":95.07,"dpc":3893,"order":84,"gdp":38721,"debttxt":"$36,812"},{"countries":"Slovenia ","debt":35992,"dpg":73.6,"dpc":17414,"order":149,"gdp":48902,"debttxt":"$35,992"},{"countries":"Algeria ","debt":32739,"dpg":20.58,"dpc":803,"order":3,"gdp":159082,"debttxt":"$32,739"},{"countries":"Uruguay ","debt":32444,"dpg":61.88,"dpc":9421,"order":178,"gdp":52431,"debttxt":"$32,444"},{"countries":"Ghana ","debt":31416,"dpg":73.41,"dpc":1114,"order":62,"gdp":42795,"debttxt":"$31,416"},{"countries":"Kazakhstan ","debt":28025,"dpg":20.96,"dpc":1575,"order":85,"gdp":133707,"debttxt":"$28,025"},{"countries":"Serbia ","debt":27993,"dpg":73.07,"dpc":3976,"order":144,"gdp":38310,"debttxt":"$27,993"},{"countries":"Bahrain ","debt":26225,"dpg":81.48,"dpc":18417,"order":12,"gdp":32186,"debttxt":"$26,225"},{"countries":"Costa Rica ","debt":25986,"dpg":44.94,"dpc":5293,"order":39,"gdp":57824,"debttxt":"$25,986"},{"countries":"Tunisia ","debt":25762,"dpg":61.21,"dpc":2259,"order":169,"gdp":42088,"debttxt":"$25,762"},{"countries":"Belarus ","debt":25529,"dpg":53.5,"dpc":2686,"order":15,"gdp":47718,"debttxt":"$25,529"},{"countries":"Dominican Republic ","debt":25087,"dpg":34.99,"dpc":2490,"order":47,"gdp":71698,"debttxt":"$25,087"},{"countries":"Burma - Myanmar ","debt":22616,"dpg":35.75,"dpc":428,"order":27,"gdp":63262,"debttxt":"$22,616"},{"countries":"Oman ","debt":22274,"dpg":33.32,"dpc":5034,"order":121,"gdp":66849,"debttxt":"$22,274"},{"countries":"Panama ","debt":21430,"dpg":37.06,"dpc":5308,"order":123,"gdp":57825,"debttxt":"$21,430"},{"countries":"Cyprus ","debt":21153,"dpg":97.5,"dpc":24476,"order":41,"gdp":21695,"debttxt":"$21,153"},{"countries":"Yemen ","debt":19479,"dpg":48.2,"dpc":762,"order":183,"gdp":40413,"debttxt":"$19,479"},{"countries":"Lithuania ","debt":18789,"dpg":39.7,"dpc":6689,"order":96,"gdp":47327,"debttxt":"$18,789"},{"countries":"Tanzania ","debt":18096,"dpg":37.97,"dpc":326,"order":164,"gdp":47659,"debttxt":"$18,096"},{"countries":"Azerbaijan ","debt":17791,"dpg":34.99,"dpc":1833,"order":10,"gdp":50846,"debttxt":"$17,791"},{"countries":"Ivory Coast ","debt":17093,"dpg":46.98,"dpc":721,"order":81,"gdp":36384,"debttxt":"$17,093"},{"countries":"Syria ","debt":16860,"dpg":31.21,"dpc":799,"order":161,"gdp":54021,"debttxt":"$16,860"},{"countries":"Guatemala ","debt":16837,"dpg":24.48,"dpc":1015,"order":65,"gdp":68779,"debttxt":"$16,837"},{"countries":"Jamaica ","debt":16181,"dpg":113.89,"dpc":5616,"order":82,"gdp":14208,"debttxt":"$16,181"},{"countries":"Libya ","debt":16157,"dpg":36.39,"dpc":2581,"order":95,"gdp":44400,"debttxt":"$16,157"},{"countries":"El Salvador ","debt":15889,"dpg":59.29,"dpc":2504,"order":50,"gdp":26799,"debttxt":"$15,889"},{"countries":"Bolivia ","debt":15736,"dpg":46.2,"dpc":1445,"order":20,"gdp":34061,"debttxt":"$15,736"},{"countries":"Bulgaria ","debt":14477,"dpg":25.4,"dpc":2054,"order":25,"gdp":56996,"debttxt":"$14,477"},{"countries":"Luxembourg ","debt":14358,"dpg":23,"dpc":23850,"order":97,"gdp":62426,"debttxt":"$14,358"},{"countries":"Mozambique ","debt":13390,"dpg":118.76,"dpc":464,"order":111,"gdp":11275,"debttxt":"$13,390"},{"countries":"Zambia ","debt":12708,"dpg":60.67,"dpc":766,"order":184,"gdp":20946,"debttxt":"$12,708"},{"countries":"Latvia ","debt":12181,"dpg":40.1,"dpc":6297,"order":91,"gdp":30377,"debttxt":"$12,181"},{"countries":"Kuwait ","debt":10962,"dpg":9.88,"dpc":2558,"order":88,"gdp":110951,"debttxt":"$10,962"},{"countries":"Iceland ","debt":10712,"dpg":52.75,"dpc":31661,"order":73,"gdp":20307,"debttxt":"$10,712"},{"countries":"Cameroon ","debt":10150,"dpg":31.48,"dpc":433,"order":30,"gdp":32243,"debttxt":"$10,150"},{"countries":"Uganda ","debt":9426,"dpg":37.24,"dpc":258,"order":173,"gdp":25311,"debttxt":"$9,426"},{"countries":"Laos ","debt":9089,"dpg":58.45,"dpc":1380,"order":90,"gdp":15550,"debttxt":"$9,089"},{"countries":"Gabon ","debt":9003,"dpg":64.2,"dpc":4548,"order":59,"gdp":14023,"debttxt":"$9,003"},{"countries":"Honduras ","debt":8929,"dpg":41.24,"dpc":980,"order":70,"gdp":21651,"debttxt":"$8,929"},{"countries":"Republic of the Congo ","debt":8926,"dpg":114.6,"dpc":1741,"order":132,"gdp":7789,"debttxt":"$8,926"},{"countries":"Senegal ","debt":8894,"dpg":60.43,"dpc":577,"order":143,"gdp":14718,"debttxt":"$8,894"},{"countries":"Albania ","debt":8700,"dpg":73.31,"dpc":3025,"order":2,"gdp":11867,"debttxt":"$8,700"},{"countries":"Trinidad and Tobago ","debt":8461,"dpg":37.51,"dpc":6199,"order":168,"gdp":22557,"debttxt":"$8,461"},{"countries":"Zimbabwe ","debt":7854,"dpg":49.6,"dpc":510,"order":185,"gdp":15835,"debttxt":"$7,854"},{"countries":"Turkmenistan ","debt":7809,"dpg":21.82,"dpc":1403,"order":171,"gdp":35788,"debttxt":"$7,809"},{"countries":"Mauritius ","debt":7474,"dpg":60.12,"dpc":5913,"order":106,"gdp":12432,"debttxt":"$7,474"},{"countries":"Bosnia and Herzegovina ","debt":7452,"dpg":44.04,"dpc":2123,"order":21,"gdp":16921,"debttxt":"$7,452"},{"countries":"Uzbekistan ","debt":7019,"dpg":10.52,"dpc":220,"order":179,"gdp":66721,"debttxt":"$7,019"},{"countries":"Paraguay ","debt":6825,"dpg":24.88,"dpc":1015,"order":125,"gdp":27432,"debttxt":"$6,825"},{"countries":"Cambodia ","debt":6791,"dpg":33.68,"dpc":431,"order":29,"gdp":20163,"debttxt":"$6,791"},{"countries":"Papua New Guinea ","debt":6645,"dpg":28.94,"dpc":839,"order":124,"gdp":22961,"debttxt":"$6,645"},{"countries":"Barbados ","debt":6617,"dpg":137.03,"dpc":23217,"order":14,"gdp":4829,"debttxt":"$6,617"},{"countries":"Democratic Republic of the Congo ","debt":6600,"dpg":16.78,"dpc":84,"order":43,"gdp":39333,"debttxt":"$6,600"},{"countries":"Georgia ","debt":6386,"dpg":44.55,"dpc":1718,"order":60,"gdp":14334,"debttxt":"$6,386"},{"countries":"Malta ","debt":6374,"dpg":50.8,"dpc":13400,"order":103,"gdp":12547,"debttxt":"$6,374"},{"countries":"Bahamas ","debt":5965,"dpg":53.02,"dpc":16209,"order":11,"gdp":11250,"debttxt":"$5,965"},{"countries":"Nepal ","debt":5770,"dpg":27.3,"dpc":199,"order":114,"gdp":21136,"debttxt":"$5,770"},{"countries":"Armenia ","debt":5471,"dpg":51.73,"dpc":1832,"order":7,"gdp":10576,"debttxt":"$5,471"},{"countries":"Chad ","debt":5290,"dpg":52.41,"dpc":366,"order":34,"gdp":10093,"debttxt":"$5,290"},{"countries":"Mali ","debt":5040,"dpg":35.89,"dpc":280,"order":102,"gdp":14043,"debttxt":"$5,040"},{"countries":"Namibia ","debt":4908,"dpg":44.83,"dpc":1979,"order":112,"gdp":10948,"debttxt":"$4,908"},{"countries":"Equatorial Guinea ","debt":4878,"dpg":47.92,"dpc":3994,"order":51,"gdp":10179,"debttxt":"$4,878"},{"countries":"Mauritania ","debt":4697,"dpg":98.75,"dpc":1092,"order":105,"gdp":4756,"debttxt":"$4,697"},{"countries":"Burkina Faso ","debt":4330,"dpg":38.28,"dpc":232,"order":26,"gdp":11311,"debttxt":"$4,330"},{"countries":"Benin ","debt":4262,"dpg":49.68,"dpc":393,"order":18,"gdp":8579,"debttxt":"$4,262"},{"countries":"Republic of Macedonia ","debt":4255,"dpg":39.54,"dpc":2052,"order":131,"gdp":10761,"debttxt":"$4,255"},{"countries":"Nicaragua ","debt":4109,"dpg":31.05,"dpc":668,"order":117,"gdp":13233,"debttxt":"$4,109"},{"countries":"Madagascar ","debt":3839,"dpg":38.38,"dpc":154,"order":98,"gdp":10003,"debttxt":"$3,839"},{"countries":"Kyrgyzstan ","debt":3810,"dpg":58.15,"dpc":627,"order":89,"gdp":6552,"debttxt":"$3,810"},{"countries":"Togo ","debt":3640,"dpg":81.59,"dpc":479,"order":167,"gdp":4461,"debttxt":"$3,640"},{"countries":"Guinea ","debt":3633,"dpg":42.85,"dpc":293,"order":66,"gdp":8478,"debttxt":"$3,633"},{"countries":"Niger ","debt":3399,"dpg":45.12,"dpc":164,"order":118,"gdp":7533,"debttxt":"$3,399"},{"countries":"Rwanda ","debt":3161,"dpg":37.29,"dpc":265,"order":135,"gdp":8477,"debttxt":"$3,161"},{"countries":"Malawi ","debt":2978,"dpg":60.28,"dpc":160,"order":99,"gdp":4940,"debttxt":"$2,978"},{"countries":"Tajikistan ","debt":2909,"dpg":41.82,"dpc":333,"order":163,"gdp":6956,"debttxt":"$2,909"},{"countries":"Montenegro ","debt":2906,"dpg":66.39,"dpc":4669,"order":109,"gdp":4377,"debttxt":"$2,906"},{"countries":"Moldova ","debt":2851,"dpg":42.09,"dpc":803,"order":108,"gdp":6774,"debttxt":"$2,851"},{"countries":"Maldives ","debt":2776,"dpg":65.87,"dpc":6489,"order":101,"gdp":4214,"debttxt":"$2,776"},{"countries":"Haiti ","debt":2774,"dpg":33.92,"dpc":256,"order":69,"gdp":8178,"debttxt":"$2,774"},{"countries":"South Sudan ","debt":2643,"dpg":86.46,"dpc":216,"order":153,"gdp":3057,"debttxt":"$2,643"},{"countries":"Suriname ","debt":2487,"dpg":75.85,"dpc":4454,"order":157,"gdp":3279,"debttxt":"$2,487"},{"countries":"Botswana ","debt":2448,"dpg":15.48,"dpc":1088,"order":22,"gdp":15814,"debttxt":"$2,448"},{"countries":"Eritrea ","debt":2394,"dpg":173.59,"dpc":566,"order":52,"gdp":1379,"debttxt":"$2,394"},{"countries":"Bhutan ","debt":2340,"dpg":109.99,"dpc":2933,"order":19,"gdp":2127,"debttxt":"$2,340"},{"countries":"Estonia ","debt":2333,"dpg":9,"dpc":1769,"order":53,"gdp":25922,"debttxt":"$2,333"},{"countries":"Fiji ","debt":2169,"dpg":46.48,"dpc":2485,"order":56,"gdp":4667,"debttxt":"$2,169"},{"countries":"Cape Verde ","debt":2124,"dpg":129.49,"dpc":4000,"order":32,"gdp":1640,"debttxt":"$2,124"},{"countries":"Sierra Leone ","debt":2078,"dpg":54.88,"dpc":287,"order":146,"gdp":3786,"debttxt":"$2,078"},{"countries":"Guyana ","debt":1778,"dpg":50.73,"dpc":2299,"order":68,"gdp":3505,"debttxt":"$1,778"},{"countries":"Belize ","debt":1753,"dpg":95.87,"dpc":4778,"order":17,"gdp":1829,"debttxt":"$1,753"},{"countries":"Afghanistan ","debt":1563,"dpg":8.03,"dpc":45,"order":1,"gdp":19465,"debttxt":"$1,563"},{"countries":"Burundi ","debt":1360,"dpg":45.26,"dpc":133,"order":28,"gdp":3005,"debttxt":"$1,360"},{"countries":"Antigua and Barbuda ","debt":1259,"dpg":86.22,"dpc":12472,"order":5,"gdp":1460,"debttxt":"$1,259"},{"countries":"Saint Lucia ","debt":1145,"dpg":69.21,"dpc":6433,"order":137,"gdp":1654,"debttxt":"$1,145"},{"countries":"The Gambia ","debt":1144,"dpg":118.48,"dpc":561,"order":166,"gdp":966,"debttxt":"$1,144"},{"countries":"Seychelles ","debt":986,"dpg":68.99,"dpc":10415,"order":145,"gdp":1429,"debttxt":"$986"},{"countries":"Central African Republic ","debt":983,"dpg":55.99,"dpc":214,"order":33,"gdp":1756,"debttxt":"$983"},{"countries":"Swaziland ","debt":967,"dpg":24.77,"dpc":854,"order":158,"gdp":3904,"debttxt":"$967"},{"countries":"Liberia ","debt":928,"dpg":28.3,"dpc":201,"order":94,"gdp":3279,"debttxt":"$928"},{"countries":"Grenada ","debt":867,"dpg":82.14,"dpc":8106,"order":64,"gdp":1056,"debttxt":"$867"},{"countries":"Lesotho ","debt":864,"dpg":35.36,"dpc":392,"order":93,"gdp":2443,"debttxt":"$864"},{"countries":"Saint Vincent and the Grenadines ","debt":639,"dpg":82.93,"dpc":5806,"order":138,"gdp":771,"debttxt":"$639"},{"countries":"Djibouti ","debt":598,"dpg":31.66,"dpc":635,"order":45,"gdp":1889,"debttxt":"$598"},{"countries":"Saint Kitts and Nevis ","debt":590,"dpg":65.56,"dpc":10763,"order":136,"gdp":900,"debttxt":"$590"},{"countries":"Guinea-Bissau ","debt":569,"dpg":48.83,"dpc":313,"order":67,"gdp":1165,"debttxt":"$569"},{"countries":"Dominica ","debt":427,"dpg":74.89,"dpc":5808,"order":46,"gdp":570,"debttxt":"$427"},{"countries":"Samoa ","debt":414,"dpg":52.58,"dpc":2110,"order":139,"gdp":787,"debttxt":"$414"},{"countries":"Vanuatu ","debt":368,"dpg":46.06,"dpc":1360,"order":180,"gdp":799,"debttxt":"$368"},{"countries":"San Marino ","debt":352,"dpg":22.5,"dpc":10604,"order":140,"gdp":1564,"debttxt":"$352"},{"countries":"Brunei ","debt":342,"dpg":3.01,"dpc":809,"order":24,"gdp":11362,"debttxt":"$342"},{"countries":"Sao Tome and Principe ","debt":330,"dpg":93.99,"dpc":1651,"order":141,"gdp":351,"debttxt":"$330"},{"countries":"Comoros ","debt":195,"dpg":31.67,"dpc":245,"order":38,"gdp":616,"debttxt":"$195"},{"countries":"Hong Kong ","debt":193,"dpg":0.06,"dpc":26,"order":71,"gdp":321667,"debttxt":"$193"},{"countries":"Solomon Islands ","debt":98,"dpg":7.91,"dpc":163,"order":150,"gdp":1239,"debttxt":"$98"},{"countries":"Federated States of Micronesia ","debt":81,"dpg":25.75,"dpc":794,"order":55,"gdp":315,"debttxt":"$81"},{"countries":"Nauru ","debt":66,"dpg":64.96,"dpc":5101,"order":113,"gdp":102,"debttxt":"$66"},{"countries":"Marshall Islands ","debt":60,"dpg":30.97,"dpc":1111,"order":104,"gdp":194,"debttxt":"$60"},{"countries":"Kiribati ","debt":42,"dpg":22.88,"dpc":365,"order":87,"gdp":184,"debttxt":"$42"},{"countries":"Tuvalu ","debt":20,"dpg":54.12,"dpc":1838,"order":172,"gdp":37,"debttxt":"$20"}];
+        objuser = [];
+
+for (i in obj) {
+x += "<option value=" + i + ">" + objname[i].countries + " </option>";
+}
+$(x).appendTo('#list');
+
+setTimeout(css, 2000);
+
+function css() {
+$('#h1').css('background', 'yellow');
+}
+
+
+
+    var spc = 100;
+    for (var op = 0; op < 185; op++) { x="<div id=\"lab\" style=\"top:" + spc + "px\">" + obj[op].countries + "</div>";
+        $('#graph2').append(x);
+        spc += 18;
+        }
+
+        var mn;
+
+        spc = 107;
+        $('#graph2').append('<h2>Debt per capita orderded by decreasing amount of debt</h2>');
+        for (var c = 0; c < 185; c++) { mn=parseFloat(obj[c].dpc) * 1 / 80; 
+            x="<div class=\" gdp\"id=\"gdp" + c + "\" style=\" top:" + spc + "px;width:" + mn + "px; background:#" + rainbow.colourAt(parseInt(obj[c].dpg)) + "\"></div>";
+            $('#graph2').append(x);
+            //console.log(c);
+            spc += 18;
+            }
+            for (i in obj) {
+            var cc = '';
+            cc = "GDP" + i;
+            // console.log(cc);
+            }
+
+            /* for (var op = 10; op < 185; op++) { var mn=parseInt(obj[op].debt) * 80 / 100000; x="<div id=\" gdp2\"
+                style=\"top:" + spc + "px\;width:" + mn + "px; \">
+                </div>";
+                $('#graph2').append(x);
+                spc += 18;
+                } */
+
+                $('select').on('change', function (e) {
+                $('#h1').detach();
+                var optionSelected = $("option:selected", this);
+                console.log(this.value);
+
+                $('#hover').append('<div id=\'h1\'>' + objname[this.value].countries + '</div>');
+                 }); 
+                var d="" , m3="apple" ; 
+                // console.log(m3); $('.gdp').powerTip({followMouse: 'true'; }); 
+                    
+                $('#gdp1').data('powertip', 'Apple' ); 
+                    
+                for (i=0; i < 185; i++) { m3="<h3 class=\"tooltip\">" + obj[i].countries + "</h3><hr></b>Debt is<br>" + obj[i].debttxt + " M<br>"+obj[i].dpg+"% of GDP<br> $" + obj[i].dpc + "per person";
+
+
+
+                    $('#gdp' + i).data('powertip', m3);
+                    // console.log(m3);
+                    }
+
+                    $(".gdp").bind("mouseover",function(e){
+                    $('#update').empty();
+                    $('#select').empty();
+                    var xy,xc;
+                    xy= this.id;
+                    var num = xy.replace( /^\D+/g, '');
+                    mn = parseFloat(obj[num].dpc)*1/85;
+
+                    xc = "<div class=\"gdp\"id=\"gdp" + c + "\" style=\" z-index:100\; top:" + 85 + "px;width:" + mn + "px; background:#" + rainbow.colourAt(parseInt(obj[num].dpg)) + "\"></div>";
+
+                    yc ="<td>"+ obj[num].countries +"</td><td>" + obj[num].debttxt + "</td><td>$" + obj[num].dpc +"</td><td>" +obj[num].dpg+"%</td>";
+
+                    $('#select').append(xc);
+                    xc = "<div id=\"lable2\" style=\"color: white; font-size: 20px; top:" + 73 + "px\">" + obj[num].countries + "</div>";
+                   
+                    $('#update').append(yc);
+                    });
+
+                    
+                    </script>
+
+                    </body>
+
+                    </html>
