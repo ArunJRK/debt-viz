@@ -153,8 +153,9 @@ button#submit:hover {
     height: auto;
     width: 700px;
     font-family: "Nunito Sans";
-    line-height: 25px;
-    font-weight: 00;
+    line-height: 27px;
+    font-weight: 400;
+    font-size: 20px;
     margin: auto;
     color: #555;
     text-align: left !important;
